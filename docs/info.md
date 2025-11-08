@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Use the first two buttons to adjust the brightness of the Dot on the 7-Seg display. The number displayed shows the current brightness level.
+1. Use the first two buttons to adjust the brightness of the Dot on the 7-Seg display. The number displayed shows the current brightness level.
 
 ## How to test
 
