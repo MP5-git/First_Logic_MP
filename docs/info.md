@@ -9,12 +9,15 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Use the first two buttons to adjust the brightness of the Dot on the 7-Seg display. The number displayed shows the current brightness level.
 
 ## How to test
 
-Explain how to use your project
+1. Reset the system.
+2. Press the first button to increase brightness.
+3. Press the second button to decrease brightness.
+4. Observe the LED dot getting brighter or dimmer, while the display updates to show the new brightness level.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware required.
