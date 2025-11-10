@@ -45,7 +45,12 @@ module seg7_animator (
                     seg_o <= flash_state ? 7'b1111111 : 7'b0000000;
                 end else begin
                     // ROTATE MODE
-                    seg_index <= seg_index + 1;
+                    if (seg_index >= 3'd5) begin
+                        seg_index <= 3'd0;       // Reset back to 0 after reaching 5
+                    end else begin
+                      seg_index <= seg_index + 1;
+                    end
+
                     case (seg_index)
                         3'd0: seg_o <= 7'b0000001; // segment a
                         3'd1: seg_o <= 7'b0000010; // segment b
@@ -64,4 +69,5 @@ endmodule
 
 `endif
 `default_nettype wire
+
 
