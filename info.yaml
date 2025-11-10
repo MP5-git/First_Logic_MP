@@ -23,6 +23,7 @@ project:
     - "counter_0_to_9.v"
     - "counter_to_7seg.v"
     - "pwm_generator.v"
+    - "seg7_animator.v"
     
    
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
