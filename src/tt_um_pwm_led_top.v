@@ -28,7 +28,7 @@ module tt_um_pwm_led_top (
 );
 	
 	// Declare wire to hold counter output
-	reg [3:0] 	counter_val;
+	wire [3:0] 	counter_val;
 	wire [6:0] 	seg7;
 	wire 		pwm_sig;
 
