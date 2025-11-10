@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-/* 
+ 
 `default_nettype none
 
-module tt_um_pwm_led_top (
+module tt_um_example (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -26,7 +26,7 @@ module tt_um_pwm_led_top (
   wire _unused = &{ena, clk, rst_n, 1'b0};
 
 endmodule 
-*/
+
 
 
 /*
@@ -40,7 +40,7 @@ endmodule
 	DutyCycle-Level can be increased and decreased with button 0 and 1
 	Brightnes of the dot on the 7seg display is controlled by the PWM-signal
 */
-
+/*
 `default_nettype none
 
 `include "counter_0_to_9.v"
@@ -95,3 +95,4 @@ module tt_um_pwm_led_top (
 	wire _unused = &{ena, ui_in, uio_in, 1'b0};
 
 endmodule
+*/
