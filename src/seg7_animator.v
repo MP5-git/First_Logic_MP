@@ -22,7 +22,7 @@ module seg7_animator (
     output reg  [6:0] seg_o      // 7-segment output
 );
 
-    reg [13:0] tick_counter;     // for timing
+	reg [14:0] tick_counter;     // for timing
     reg [2:0]  seg_index;        // which segment is active in rotation mode
     reg        flash_state;      // toggle state for flashing
 
@@ -36,7 +36,7 @@ module seg7_animator (
             // create a slow tick
             tick_counter <= tick_counter + 1;
 
-            if (tick_counter == 14'd10_000) begin //
+			if (tick_counter == 15'd20_000_000) begin //flash every 0.4 s at f_clk = 50MHz 
                 tick_counter <= 0;
 
                 if (mode_i == 1'b0) begin
@@ -64,3 +64,4 @@ endmodule
 
 `endif
 `default_nettype wire
+
