@@ -13,7 +13,7 @@
 // limitations under the License.
 
 /*
-	Generates PWM-signal
+	Generates PWM-signal.
 	Displays current duty-cycle-level at 7seg-disp
 	DutyCycle-Level can be increased and decreased with button 0 and 1
 	Brightnes of the dot on the 7seg display is controlled by the PWM-signal
@@ -87,4 +87,5 @@ module tt_um_pwm_led_top (
 	wire _unused = &{ena, ui_in, uio_in, 1'b0};
 
 endmodule
+
 
